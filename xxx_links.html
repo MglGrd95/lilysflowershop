@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	  <title>Lily's Flower shop</title>
+	  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale = 1.0">
+	  <link rel="stylesheet" href="MGC_styles.css">
+	</head>
+	<header>
+	<img width= 100 src="MGC_Lily.png" alt="lily" title="lily">
+	  <h1>Lily's Flower Shop</h1>
+	  <nav>
+	    <ul>
+		   <li class="form2"><a href="index.html" title="navlink">Lily's Flower Shop</a></li>
+		   <li class="form2"><a href="xxx_contact.html" title="navlink">Contact Us</a></li>
+		   <li class="form2" onmouseover = "dropDownMenu()" onmouseout = "stop()"><a href="xxx_form.html" title="navlink">Form</a>
+		      <ol class="dropdown" id="dropdown">
+			     <li class="links"><a href="" title="navlink">link1</a></li>
+				 <li class="links"><a href="" title="navlink">link2</a></li>
+				 <li class="links"><a href="" title="navlink">link3</a></li>
+			  </ol>
+			</li>
+		   <li class="form2"><a href="xxx_links.html" title="navlink">Links</a></li>
+		   <li class="form2"><a href="xxx_table.html" title="navlink">Prices</a></li>
+		   <li class="form2"><a href="MGC_page1.html" title="navlink">Our Flowers</a></li>
+		   <li class="form2"><a href="MGC_page2.html" title="navlink">Countdown</a></li>
+		</ul>
+	  </nav>
+	</header>
+	<hr>
+	<body>
+	   <div class="rows">
+	   <div class = "row-2">
+		   <div class = "col-2">
+		     <div class = "head">Flower Arrangement</div>
+			   <div>
+			      <a href="https://www.countryliving.com/entertaining/g207/floral-displays-0606/" title="arrangement link">52 Easy DIY Flower Arrangements</a>
+			   </div>
+			    <div>
+			      <a href="https://homebnc.com/best-flower-arrangement-ideas/" title="arrangement link">50+ Innovative Ways to Arrange Fresh Flowers</a>
+			   </div>
+			    <div>
+			      <a href="https://www.pinterest.com/kyongk/floral-arrangements-ideas/" title="arrangement link">Floral arrangements ideas</a>
+			   </div>
+			   <div>
+			      <a href="https://www.marthastewart.com/1504589/flower-arrangement-ideas" title="arrangement link">Flower Arrangement Ideas, MARTHASTEWART.COM</a>
+			   </div>
+		   </div>
+		   </div>
+		<div class = "row-3">
+		   <div class = "col-3">
+		     <div class = "head">Flower Types</div>
+			   <div>
+			      <a href="https://www.proflowers.com/blog/types-of-flowers" title="flower type">151 Types of Flowers Common in the U.S.</a>
+			   </div>
+			    <div>
+			      <a href="https://florgeous.com/types-of-flowers/" title="flower type">300 Flower Names and Types with Pictures</a>
+			   </div>
+			    <div>
+			      <a href="https://www.countryliving.com/gardening/g3280/flower-pictures/" title="flower type">60 Best Types of Flowers You Should Have in Your Garden</a>
+			   </div>
+			   <div>
+			      <a href="https://www.1800flowers.com/blog/flower-facts/flower-types/" title="flower type">Most Popular Flower Types</a>
+			   </div>
+		   </div>
+		   </div>
+		<div class = "row-4">
+		   <div class = "col-4">
+		     <div class = "head">External Links</div>
+			   <div>
+			      <a href="xxx_design.html" title="external link">Design Page</a>
+			   </div>
+			    <div>
+			      <a href="https://www.tccd.edu/" title="external link">TCC District Site</a>
+			   </div>
+			    <div>
+			      <a href="https://www.mozilla.org/en-US/" title="external link">Mozilla</a>
+			   </div>
+			   <div>
+			      <a href="https://www.microsoft.com/en-us/" title="external link">Microsoft</a>
+			   </div>
+		   </div>
+		   </div>
+	</body>
+	<hr>
+	<footer>
+	   <div class = "row-1">
+		   <div class = "col-1">
+		     <div class = "head">External Links</div>
+			   <div>
+			      <a href="xxx_design.html" title="sitemaplink">Design Page</a>
+			   </div>
+			    <div>
+			      <a href="https://www.tccd.edu/" title="sitemaplink">TCC District Site</a>
+			   </div>
+			    <div>
+			      <a href="" title="newlink"><img width= 30 src="MGC_new.png" alt="new">Link</a>
+			   </div>
+		   </div>
+		   </div>
+		<p><a href="" title="emaillink"><img width= 30 src="MGC_email.png" alt="email"></a>EMAIL: lilysflowers@email.com<p>
+		<p>Last Updated:</p>
+	   <p id = "demo"></p>
+	</footer>
+	<script>
+	   var cur_date = new Date();
+	   
+	document.getElementById("demo").innerHTML = cur_date;
+	
+	function dropDownMenu() {
+			    var menu = document.getElementById("dropdown");
+				if (menu.style.display = "none"){
+				menu.style.display = "block";
+				} 
+			 }
+			 
+			 function stop() {
+			    var menu = document.getElementById("dropdown");
+				menu.style.display = "none";
+			 }
+	</script>
+</html>

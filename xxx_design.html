@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	  <title>Lily's Flower shop</title>
+	  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale = 1.0">
+	  <link rel="stylesheet" href="MGC_styles.css">
+	</head>
+	<header>
+	<img width= 100 src="MGC_Lily.png" alt="lily" title="lily">
+	  <h1>Lily's Flower Shop</h1>
+	  <nav>
+	    <ul>
+		   <li class="form2"><a href="index.html" title="navlink">Lily's Flower Shop</a></li>
+		   <li class="form2"><a href="xxx_contact.html" title="navlink">Contact Us</a></li>
+		   <li class="form2" onmouseover = "dropDownMenu()" onmouseout = "stop()"><a href="xxx_form.html" title="navlink">Form</a>
+		      <ol class="dropdown" id="dropdown">
+			     <li class="links"><a href="" title="navlink">link1</a></li>
+				 <li class="links"><a href="" title="navlink">link2</a></li>
+				 <li class="links"><a href="" title="navlink">link3</a></li>
+			  </ol>
+			</li>
+		   <li class="form2"><a href="xxx_links.html" title="navlink">Links</a></li>
+		   <li class="form2"><a href="xxx_table.html" title="navlink">Prices</a></li>
+		   <li class="form2"><a href="MGC_page1.html" title="navlink">Our Flowers</a></li>
+		   <li class="form2"><a href="MGC_page2.html" title="navlink">Countdown</a></li>
+		</ul>
+	  </nav>
+	</header>
+	<hr>
+	<body id="design">
+	  <h1>Design Document</h1>
+	   <p>Here at Lily's Flower Shop you can browse through our selection of flowers for any event or special ocasion.</p>
+	   <p>Our Mission Statement: The website aims to allow new comers and loyal customers to view our information and get services towards their flower needs,
+	   along with helping our shop grow and bloom like our flowers.</p>
+	   <p>Our navigation tools such as our nav bar at the top of the page, the drop down menu and the external links at the bottom of the page are the 
+	   the way you can get around this website. The organization structure will be layed out from the top horizontally and at the bottom our external links
+	   are layed out along with the content in the middle of the body tags.</p>
+	   <p>The way i decided to put the website together was initially to start it off like chade's bicycle company was layed out only have a 
+	   little more creative freedom with this site such as re-organizing the navbar, the title and the logo for the site.</p>
+	   <p>The Formal bibliography</p>
+	   <ul>
+	     <ol>W3schools: <a href="https://www.w3schools.com/">https://www.w3schools.com/</a></ol>
+		 <ol>Google: <a href="https://www.google.com/">https://www.google.com/</a></ol>
+		 <ol>JavaScript: The Web Warrior Series 6th edition Vodnik, Sasha, and Don Gosselin JavaScript: The Web Warrior Series.
+		 Cengage Learning US, 2014. [VitalSource Bookshelf].</ol>
+		 <ol>pixabay: <a href="https://pixabay.com/">https://pixabay.com/</a></ol>
+	   </ul>
+	 
+	</body>
+	<hr>
+	<footer>
+	   <div class = "row-1">
+		   <div class = "col-1">
+		     <div class = "head">External Links</div>
+			   <div>
+			      <a href="xxx_design.html" title="sitemaplink">Design Page</a>
+			   </div>
+			    <div>
+			      <a href="https://www.tccd.edu/" title="sitemaplink">TCC District Site</a>
+			   </div>
+			    <div>
+			      <a href="" title="newlink"><img width= 30 src="MGC_new.png" alt="new">Link</a>
+			   </div>
+		   </div>
+		   </div>
+		<p><a href="" title="emaillink"><img width= 30 src="MGC_email.png" alt="email"></a>EMAIL: lilysflowers@email.com<p>
+		<p>Last Updated:</p>
+	   <p id = "demo"></p>
+	</footer>
+	<script>
+	   var cur_date = new Date();
+	   
+	document.getElementById("demo").innerHTML = cur_date;
+	
+	function dropDownMenu() {
+			    var menu = document.getElementById("dropdown");
+				if (menu.style.display = "none"){
+				menu.style.display = "block";
+				} 
+			 }
+			 
+			 function stop() {
+			    var menu = document.getElementById("dropdown");
+				menu.style.display = "none";
+			 }
+	</script>
+</html>

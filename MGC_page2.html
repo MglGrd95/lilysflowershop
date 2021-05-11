@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	  <title>Lily's Flower shop</title>
+	  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale = 1.0">
+	  <link rel="stylesheet" href="MGC_styles.css">
+	</head>
+	<header>
+	<img width= 100 src="MGC_Lily.png" alt="lily" title="lily">
+	  <h1>Lily's Flower Shop</h1>
+	  <nav>
+	    <ul>
+		   <li class="form2"><a href="index.html" title="navlink">Lily's Flower Shop</a></li>
+		   <li class="form2"><a href="xxx_contact.html" title="navlink">Contact Us</a></li>
+		   <li class="form2" onmouseover = "dropDownMenu()" onmouseout = "stop()"><a href="xxx_form.html" title="navlink">Form</a>
+		      <ol class="dropdown" id="dropdown">
+			     <li class="links"><a href="" title="navlink">link1</a></li>
+				 <li class="links"><a href="" title="navlink">link2</a></li>
+				 <li class="links"><a href="" title="navlink">link3</a></li>
+			  </ol>
+			</li>
+		   <li class="form2"><a href="xxx_links.html" title="navlink">Links</a></li>
+		   <li class="form2"><a href="xxx_table.html" title="navlink">Prices</a></li>
+		   <li class="form2"><a href="MGC_page1.html" title="navlink">Our Flowers</a></li>
+		   <li class="form2"><a href="MGC_page2.html" title="navlink">Countdown</a></li>
+		</ul>
+	  </nav>
+	</header>
+	<hr>
+	<body>
+	<h2>Count down clock until New Sale!!!</h2>
+	<p id="demo2"></p>
+	</body>
+	<hr>
+	<footer>
+	   <div class = "row-1">
+		   <div class = "col-1">
+		     <div class = "head">External Links</div>
+			   <div>
+			      <a href="xxx_design.html" title="sitemaplink">Design Page</a>
+			   </div>
+			    <div>
+			      <a href="https://www.tccd.edu/" title="sitemaplink">TCC District Site</a>
+			   </div>
+			    <div>
+			      <a href="" title="newlink"><img width= 30 src="MGC_new.png" alt="new">Link</a>
+			   </div>
+		   </div>
+		   </div>
+		<p><a href="" title="emaillink"><img width= 30 src="MGC_email.png" alt="email"></a>EMAIL: lilysflowers@email.com<p>
+		</div>
+		<div class="time">
+		<p>Last Updated:</p>
+	   <p id = "demo"></p>
+	   </div>
+	</footer>
+	<script>
+	   var cur_date = new Date();
+	   
+	document.getElementById("demo").innerHTML = cur_date;
+	
+	function dropDownMenu() {
+			    var menu = document.getElementById("dropdown");
+				if (menu.style.display = "none"){
+				menu.style.display = "block";
+				} 
+			 }
+			 
+			 function stop() {
+			    var menu = document.getElementById("dropdown");
+				menu.style.display = "none";
+			 }
+			 
+		var countDownDate = new Date("August 1, 2021 15:37:25").getTime();
+
+// looked up the clock in w3schools as the clock.zip files are not available
+            var x = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+			 var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+			 var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			 var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			 var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            document.getElementById("demo2").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+		  if (distance < 0) {
+			clearInterval(x);
+			document.getElementById("demo2").innerHTML = "EXPIRED";
+		  }
+		}, 1000);
+	</script>
+</html>

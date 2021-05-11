@@ -1,0 +1,73 @@
+body{
+	background-color: #fdf5e2;
+}
+ul li {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+}
+#design {
+	background-image: url("images/MGC_flowers.png");
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+h2 {
+	padding-left: 40%;
+}
+div.form {
+	padding-bottom: 1%;
+	padding-left: 40%;
+}
+div.button {
+	padding-left: 43%;
+}
+.form2 {
+	position: relative;
+}
+.dropdown {
+	position: absolute;
+	background-color: #f1d592;
+	padding: 1%;
+	display: none;
+}
+.links {
+	padding-bottom: 10%;
+}
+li.form2 {
+	display: inline-block;
+	padding-right: 5%;
+}
+div.prices {
+	position: relative;
+	padding-left: 35%;
+}
+div.contact {
+	position: relative;
+	padding-left: 35%;
+}
+.contact p {
+	padding-bottom: 1%;
+}
+#demo2 {
+	padding-left: 50%;
+}
+@media (max-width: 1024px) {
+	img.responsive1 {
+		width: 100%;
+	}
+	#textarea {
+		width: 80%;
+	}
+	table.prices {
+		width: 100%;
+	}
+	div.prices {
+		width: 40%;
+	}
+	#flowers {
+		width: 100%;
+	}
+}
