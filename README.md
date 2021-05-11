@@ -1,2 +1,2 @@
 # lilysflowershop
-This is my second website that I made in my intermediate web programming class.
+This is my Final Project in my intermediate web programming class.
